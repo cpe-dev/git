@@ -1,7 +1,20 @@
-﻿
+﻿@model CPE.DAL.ViewModels.AccountViewModel
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1 class="topTitle topHeadText">
+    <b>สวัสดี</b>
 
+
+</h1>
+<div class="topHeadText"><i class="icon-calendar"></i>AVC</div>
+<form id="frmAddAccount">
+    @Html.TextBoxFor(a => a.FirstName, new { @class = "form-control" })
+    @Html.TextBoxFor(a => a.LastName, new { @class = "form-control" })
+    @Html.TextBoxFor(a => a.Age, new { @class = "form-control" })
+    <div class="form-actions">
+        <button type="submit" id="btnSaveAnswer" class="btn btn-danger">บันทึกคำถาม</button>
+        <button type="submit" id="btnRemoveAnswer" class="btn btn-danger">ยกเลิก</button>
+    </div>
+</form>
