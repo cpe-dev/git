@@ -80,9 +80,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\image\profile.png" />
+    <Content Include="css\custom.css" />
     <Content Include="css\font.css" />
     <Content Include="css\myStyle.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\shadow.css" />
     <Content Include="fonts\db_helvethaica_x_bd_v3.2-webfont.svg" />
     <Content Include="fonts\db_helvethaica_x_li_v3.2-demo.html" />
     <Content Include="fonts\db_helvethaica_x_li_v3.2-webfont.svg" />
@@ -194,6 +196,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CPE.DAL\CPE.DAL.csproj">
+      <Project>{f39a1bf4-86c0-47e4-ba50-73feb6cb85e4}</Project>
+      <Name>CPE.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
